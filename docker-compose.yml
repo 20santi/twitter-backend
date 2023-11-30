@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  twitter-website:
+    container_name: twitter-db
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/postgres_data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: twitter
+      POSTGRES_PASSWORD: twitter
+
+volumes:
+  postgres_data:

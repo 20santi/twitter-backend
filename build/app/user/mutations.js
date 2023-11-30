@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.mutations = void 0;
+exports.mutations = `#graphql
+    followUser(to: ID!): Boolean
+    unFollowUser(to: ID!): Boolean
+    banUser(id: ID!): Boolean
+    unBanUser(id: ID!): Boolean
+    verifyPayment(data: ResponseType): Boolean
+`;
